@@ -510,7 +510,7 @@ public class Die1Procedure {
                         if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
                             _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.QUAKE.get(), 120, 1, false, false));
                         if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                            _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.NAOYA_AWAKENING.get(), Integer.MAX_VALUE, 1, false, false));
+                            _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.NAOYA_AWAKENING.get(), -1, 1, false, false));
                         if (event != null && event.isCancelable()) {
                             event.setCanceled(true);
                         } else if (event != null && event.hasResult()) {

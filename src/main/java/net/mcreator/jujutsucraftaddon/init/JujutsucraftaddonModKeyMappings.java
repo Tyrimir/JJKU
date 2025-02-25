@@ -129,6 +129,13 @@ public class JujutsucraftaddonModKeyMappings {
                             }
                         });
                     }
+                    else if (player.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables()).PlayerCurseTechnique == 7) {
+                        Minecraft.getInstance().execute(() -> {
+                            if (Minecraft.getInstance().screen == null) {
+                                Minecraft.getInstance().setScreen(new KashimoScreen());
+                            }
+                        });
+                    }
                 }
             }
             isDownOld = isDown;
